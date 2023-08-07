@@ -1,0 +1,3 @@
+[functions]
+  directory = "my_functions"
+  node_bundler = "esbuild"
