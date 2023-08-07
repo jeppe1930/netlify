@@ -9,7 +9,7 @@
     },
     "author": "Jesper Lindh",
     "dependencies": {
-      "netlify-lambda": "^3.0.0"
-    }
+        "netlify-lambda": "*"
+      }      
   }
   
