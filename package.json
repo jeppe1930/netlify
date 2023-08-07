@@ -4,12 +4,12 @@
     "description": "Ett enkelt drickspel med Netlify-funktioner",
     "main": "my_functions/drinkGame.js",
     "scripts": {
-      "test": "echo \"Inga tester definierade\"",
-      "start": "netlify dev"
+        "test": "echo \"Inga tester definierade\"",
+        "start": "netlify dev"
     },
     "author": "Jesper Lindh",
     "dependencies": {
+        "@netlify/functions": "^1.6.0",
         "netlify-lambda": "*"
-      }      
-  }
-  
+    }
+}

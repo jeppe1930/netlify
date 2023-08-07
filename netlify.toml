@@ -1,5 +1,11 @@
 [build]
   functions = "my_functions"
-[functions]
-  directory = "my_functions"
-  node_bundler = "esbuild"
+  publish = "frontend"  # Byt ut "frontend" med namnet på din mapp för statiska filer
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[dev]
+  functions = "my_functions"
