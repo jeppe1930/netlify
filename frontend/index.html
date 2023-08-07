@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drickspel</title>
+</head>
+<body>
+  <h1>Välkommen till drickspel!</h1>
+  <button id="getDrinkButton">Generera drickuppdrag</button>
+  <p id="drinkAssignment"></p>
+  
+  <script>
+    const button = document.getElementById("getDrinkButton");
+    const drinkAssignmentElement = document.getElementById("drinkAssignment");
+    
+    button.addEventListener("click", async () => {
+      const response = await fetch("/.netlify/functions/drinkGame");
+      const data = await response.json();
+      drinkAssignmentElement.textContent = data.drink;
+    });
+  </script>
+</body>
+</html>

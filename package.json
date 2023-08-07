@@ -1,0 +1,16 @@
+{
+    "name": "drink-game",
+    "version": "1.0.0",
+    "description": "Ett enkelt drickspel med Netlify-funktioner",
+    "main": "my_functions/drinkGame.js",
+    "scripts": {
+      "test": "echo \"Inga tester definierade\"",
+      "start": "netlify dev"
+    },
+    "author": "Jesper Lindh",
+    "license": "",
+    "dependencies": {
+      "netlify-lambda": "^3.1.2" // eller senaste versionen
+    }
+  }
+  
