@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  input[type="text"] {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  li {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0.8rem;
+    margin: 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    position: relative;
+  }
+  
+  li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: opacity 0.2s;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  li .edit-button {
+    background-image: url('icons/editPen.png');
+    width: 28px; /* Justera storleken här */
+    height: 28px; /* Justera storleken här */
+    left: 75%;
+  }
+  
+  li .delete-button {
+    background-image: url('icons/cross.png');
+  }
+  
+  li button:hover {
+    opacity: 0.7;
+  }
+  
+  .start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .start-button:disabled {
+    background-color: #ccc;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.2s;
+  }
+  
+  .back-button:hover {
+    color: #0056b3;
+  }
+  

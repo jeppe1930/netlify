@@ -1,22 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Drickspel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .game-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 0.5rem;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .game-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Välkommen till drickspel!</h1>
-  <button id="getDrinkButton">Generera drickuppdrag</button>
-  <p id="drinkAssignment"></p>
-  
-  <script>
-    const button = document.getElementById("getDrinkButton");
-    const drinkAssignmentElement = document.getElementById("drinkAssignment");
-    
-    button.addEventListener("click", async () => {
-      const response = await fetch("/.netlify/functions/drinkGame");
-      const data = await response.json();
-      drinkAssignmentElement.textContent = data.drink;
-    });
-  </script>
+  <div class="container">
+    <h1>Welcome to Game Hub!</h1>
+    <p>Choose a game to play:</p>
+    <div class="buttons">
+      <a href="back-to-back.html" class="game-button">Back to Back</a>
+      <a href="cards.html" class="game-button">Cards</a>
+      <a href="dice.html" class="game-button">Dice</a>
+      <a href="olivia.html" class="game-button">Olivia</a>
+    </div>
+  </div>
 </body>
 </html>
